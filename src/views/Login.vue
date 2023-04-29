@@ -21,7 +21,7 @@
         <form class="mt-1" @submit.prevent="login">
           <div>
             <p>Email</p>
-            <div class="mt-1 rounded-lg h-14 border-2 border-white bg-grayCustom text-white placeholder-white">
+            <div class="mt-1 w-80 rounded-lg h-14 border-2 border-white bg-grayCustom text-white placeholder-white">
               <input required type="email" class="h-full pl-4 w-full bg-transparent placeholder-white focus:outline-none"
                 placeholder="usuario@" v-model="user.email">
             </div>
@@ -32,7 +32,7 @@
           <div class="mt-4">
             <p>Contraseña</p>
             <div
-              class="mt-1 rounded-lg h-14 border-2 border-white bg-grayCustom text-white px-4 placeholder-white flex justify-between">
+              class="mt-1 w-80 rounded-lg h-14 border-2 border-white bg-grayCustom text-white px-4 placeholder-white flex justify-between">
               <input required :type="inputType" class="h-full bg-transparent placeholder-white focus:outline-none"
                 placeholder="• • • • • • •" v-model="user.password">
               <img src="../assets/login/ojito.svg" alt="showPassword" @click.prevent="toggleInput"
